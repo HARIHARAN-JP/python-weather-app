@@ -18,7 +18,7 @@ root.wm_iconphoto(False, photo)
 def get_data(root):
     city=user.get()
     print(city)
-    API_URL="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=003da33b59d01689a7e171acf4d7976c"
+    API_URL="https://api.openweathermap.org/data/2.5/weather?q="+city+"API_KEY"
     resp=requests.get(API_URL)
     #print(resp)
     if resp.status_code == 200:
@@ -50,3 +50,4 @@ label.grid(row=2,column=0)
 
 
 root.mainloop()
+
