@@ -1,0 +1,3 @@
+install this,
+requests
+pillow
